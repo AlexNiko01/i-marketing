@@ -1,0 +1,29 @@
+.doubl_icons_row{
+    background-color: $white;
+    overflow: hidden;
+    width: 100%;
+    .icon{
+        margin-top:35px;
+        margin-bottom:35px;
+        img{
+            float:left;
+        }
+        span{
+            display:block;
+            line-height:25px;
+            font-weight:400;
+            text-align: left;
+            margin-left:60px;
+        }
+        @include span(12);
+
+        @media (min-width:$mdplus-device){
+            @include span(3);
+            img{
+                float:none;
+                margin-left: 60px;
+                text-align: left;
+            }
+        }
+    }
+}

@@ -1,0 +1,133 @@
+.payment_issue{
+    display: none;
+    @media (min-width:  $mdplus-device){
+        span{
+            b{
+                font-weight: bold;
+            }
+        }
+        margin-bottom: 23px;
+        border: 1px solid #f39b11;
+        display:block;
+        .head{
+            padding-left:29px;
+            padding-top:32px;
+            padding-bottom: 23px;
+            h2{
+                text-align: left;
+                margin:0;
+                margin-bottom: 17px;
+            }
+            span{
+                display:block;  
+            }
+            .payment_descript{
+                margin-bottom: 23px;
+                font-size: 17px;
+            }
+            .discount{
+                i{
+                    color: #276fa8;
+                }
+            }
+
+            border-bottom: 1px solid #f8c575;
+        }
+        .foot{
+
+            span, .see_letter, .place{
+                display:block;  
+            }
+            .payment_services{
+                span{
+                    font-size: 12px;
+                    display: inline-block;
+                }
+                .payment_logos{
+                    line-height: 3em;
+                    display: table-cell;
+                    img{
+                        vertical-align: middle;
+                    }
+                }
+            }
+            .descript_payment{
+                b{
+                    font-weight: bold;
+                }
+                font-size: 12px;
+            }
+            .wifi{
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 3em;
+                display:table-cell;
+                img{
+                    vertical-align: middle;
+                }
+            }
+            .see_letter, .place{
+                font-weight: bold;
+                text-decoration: none;
+                color:#000;
+                border-bottom: 1px dashed #000;
+                width: auto;
+                font-size: 16px;
+                width:170px;
+                &:hover{
+                    border-bottom: 1px dashed #fff;
+                }
+            }
+            input, .payment_services{
+                margin-bottom: 19px;
+            }
+            overflow: hidden;
+            padding-left:29px;
+            padding-bottom: 30px;
+            padding-right: 80px;
+            padding-top: 19px;
+        }
+        h2{
+            color: #276fa8;
+            font-size: 45px;
+        }
+    }
+}
+
+.seminar-detail{
+
+    ul, ol, h3, p{
+        display: none;
+    }    
+    .left_column, .right_column{
+        width:50%;
+        float: left;
+    }
+    .left_column{
+        h2{
+            border: none;
+        }
+        span{
+            display: block;
+        }
+    }
+    .right_column{
+        span{
+            display: block;
+        }
+        clear: both;
+    }
+    @media (min-width:  $mdplus-device){
+        .left_column, .right_column{
+            span{
+                display: none;
+            }
+        }
+        .paym, .payment_descript, .discount, .see_more, .btn.orange-btn{
+            display: none;
+        } 
+        ul, ol, h3, p{
+            display: block;
+        }
+    } 
+}

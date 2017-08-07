@@ -1,0 +1,36 @@
+$lightblue:#d6e0ea;
+
+.accordion{
+	&-w{
+		border:1px solid $lightblue;
+	}
+	&-item-title{
+		background:$lightblue;
+		color:#000;
+		font-size: 16px;
+		&:hover{
+			background:darken($lightblue, 10%);
+			cursor:pointer;
+		}
+	}
+	&-title,
+	&-item-title,
+	&-item-content{
+		padding:15px;
+		margin-bottom:1px;
+	}
+	&-title{
+		background:$blue;
+		color:#fff;
+		font-weight:bold;
+		font-size: 18px;
+		margin:0;
+	}
+	@media (min-width:$mdplus-device){
+		&-title,
+		&-item-title,
+		&-item-content{
+			padding:15px 50px;
+		}
+	}
+}

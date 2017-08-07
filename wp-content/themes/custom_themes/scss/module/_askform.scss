@@ -1,0 +1,10 @@
+.ask-form {
+	@include box-shadow(0 0 4px 0 rgba(0,0,0,0.35));
+	@include border-radius(6px);
+	max-width:600px;
+	background:$blue;
+	margin:0 auto;
+	padding:30px 30px 0 30px;
+	border:1px solid #184a79;
+        position: relative;
+}

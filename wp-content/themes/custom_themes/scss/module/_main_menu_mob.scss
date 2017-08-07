@@ -1,0 +1,45 @@
+.main_menu_mob{
+    outline: none;
+    @include transition(all 0.8s ease);
+    z-index: 150;
+    position: absolute;
+    left:0;
+    top:-375px;
+    background-color: #f5f5f6;
+    width:100%;
+    ul{
+        margin:0;
+        padding:0;
+        li{
+            @include transition(all 0.8s ease);
+            list-style-type: none;
+            margin:0;
+            padding:0;
+            /*padding: $pad*4 $pad*3;*/
+            border-bottom:1px solid #dadada;
+            a{
+                display: block;
+                text-decoration: none;
+                color: #010000;
+                padding: $pad*4 $pad*10;
+                font-weight:bold;
+            }
+            &:hover{
+                @include transition(all 0.8s ease);
+                background-color: #010000;
+                a{
+                    color: #f5f5f6;
+                }
+            }
+        }
+    }
+}
+.main_menu_mob.openType{
+    top:65px;
+    @include transition(all 0.8s ease);
+}
+
+.menu_button.openType{
+    @include transform (rotate(90deg));
+    @include transition(all 0.8s ease);
+}

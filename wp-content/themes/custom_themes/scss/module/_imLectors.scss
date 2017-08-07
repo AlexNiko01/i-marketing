@@ -1,0 +1,24 @@
+.im_lectors{
+    overflow:hidden;
+    width:100%;
+    text-align:center;
+
+    .lectors_row{
+        .single_speaker{
+            @include span(6);
+            margin-bottom: 40px;
+            .single_speaker_header{
+                margin-top: 18px;
+            }
+            @media (min-width:$mdplus-device){
+                margin-bottom:70px;
+                @include span(4);
+                .single_speaker_header{
+                    margin-top: 36px;
+                } 
+            }
+        }
+
+    }
+
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="e812f4d2-9a61-41cc-aad7-f994350b2fbd" name="setwork.ftp.ukraine.com.ua (project level)" url="http://setwork.ftp.ukraine.com.ua">
+        <fileTransfer host="setwork.ftp.ukraine.com.ua" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="d8e66cb8-9375-4751-9243-104fa16df591" name="poltava@i-marketing.ua" url="http://ftp.i-marketing.ua">
+        <fileTransfer host="ftp.i-marketing.ua" port="21" rootFolder="/public_html">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,8 @@
+[12-Dec-2015 04:59:35 Europe/Helsinki] PHP Fatal error:  Call to undefined function get_header() in /home/imarket/public_html/wp-content/themes/custom_themes/index.php on line 1
+[21-May-2016 13:09:48 Europe/Helsinki] PHP Fatal error:  Call to undefined function get_header() in /home/imarket/public_html/wp-content/themes/custom_themes/404.php on line 1
+[19-Mar-2017 08:32:04 Europe/Helsinki] PHP Fatal error:  Call to undefined function get_header() in /home/imarket/public_html/wp-content/themes/custom_themes/404.php on line 1
+[24-Mar-2017 06:18:10 Europe/Helsinki] PHP Fatal error:  Call to undefined function get_header() in /home/imarket/public_html/wp-content/themes/custom_themes/404.php on line 1
+[28-Mar-2017 04:34:56 Europe/Helsinki] PHP Fatal error:  Call to undefined function get_header() in /home/imarket/public_html/wp-content/themes/custom_themes/404.php on line 1
+[07-Apr-2017 21:17:39 Europe/Helsinki] PHP Fatal error:  Call to undefined function get_header() in /home/imarket/public_html/wp-content/themes/custom_themes/index.php on line 1
+[08-Apr-2017 11:16:12 Europe/Helsinki] PHP Fatal error:  Call to undefined function get_header() in /home/imarket/public_html/wp-content/themes/custom_themes/index.php on line 1
+[18-Apr-2017 19:09:28 Europe/Helsinki] PHP Fatal error:  Call to undefined function get_header() in /home/imarket/public_html/wp-content/themes/custom_themes/404.php on line 1

@@ -1,0 +1,494 @@
+div.collapsed:after {
+    position: relative;
+    right: -20px;
+    top: 4px;
+    float: right;
+    font: normal normal normal 16px/1 FontAwesome;
+    content: "\f103";
+}
+
+div.accordion-open:after {
+    position: relative;
+    right: -20px;
+    top: 4px;
+    float: right;
+    font: normal normal normal 16px/1 FontAwesome;
+    content: "\f102";
+}
+
+#footer .logo-w .logo-item {
+	float: none !important;
+	display: inline-block;
+}
+#footer .logo-w {
+	text-align: center;
+}
+
+.learn-w ul.learn-w-list li div.img {
+	height: 132px;
+	background-position: center center;
+	background-size: 100% auto;
+}
+.learn-w ul li {
+	margin-top: 0;
+}
+.home-page {
+	display: none;
+}
+.inner-page {
+	display: block;
+}
+body.home .inner-page {
+	display: none;
+}
+body.home .home-page {
+	display: block;
+}
+.view_seminar_program:hover {
+	background: #03315d !important;
+}
+section.promo .promo_img {
+	visibility: hidden;
+	opacity: 0;
+	display: none;
+}
+.single_event:hover span.event_overlay {
+	width: 100%;
+}
+section.promo div.text_overlay {
+	position: static;
+	height: auto;
+}
+@media (min-width: 1024px) {
+	section.promo .promo_img {
+		visibility: visible;
+		opacity: 1;
+		display: block;
+	}
+	section.promo div.text_overlay {
+		position: absolute;
+		height: 410px;
+	}
+}
+
+.speaker-w #show-ask-form {
+	display: none;
+}
+
+#header .main_menu .current-menu-item a {
+	background-image: url(../img/images/hover_main.png);
+	background-repeat: no-repeat;
+	background-position: bottom center;
+}
+
+@media (min-width: 600px) {
+	#header .main_menu ul li a {
+		opacity: 0.65;
+	}
+
+	#header .main_menu ul li a:hover {
+		opacity: 1;
+	}
+	.im_lectors .lectors_row .single_speaker {
+		min-height: 430px;
+		margin-bottom: 15px !important;
+	}
+}
+
+@media (min-width: 1024px) {
+	#header a.main_logo {
+
+		margin-top: 20px;
+	}
+
+	.white-popup {
+		width: 70% !important;
+	}
+}
+
+/*span.main-logo-text{
+ display:none;}
+ @media (min-width: 1024px) {
+ span.main-logo-text {
+ display:block;
+ position: absolute;
+ z-index: 9999;
+ color: #000;
+ left: 0;
+ bottom: -12px;
+ font-size:16px;
+ letter-spacing: 0.024em;
+ }
+ }*/
+
+.acc-i-content ul li {
+	padding-left: 30px;
+	position: relative;
+	margin-bottom: 10px;
+}
+.acc-i-content ul li:before {
+	content: '';
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	width: 8px;
+	height: 8px;
+	background: #2a76a3;
+	left: 10px;
+	position: absolute;
+	top: 5px;
+}
+
+.acc-i .acc-i-title a {
+	background-image: none;
+	width: 173px !important;
+}
+.acc-i.accordion-open .acc-i-title a {
+	position: relative;
+	border-bottom: 1px solid rgba(255,255,255,0);
+	color: #575353;
+}
+.acc-i.accordion-open .acc-i-title a:after {
+	position: absolute;
+	content: '';
+	width: 13px;
+	height: 22px;
+	background-image: url(../img/images/arrow-up.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+.clearfix:before, .clearfix:after, .row:before, .row:after {
+	content: '\0020';
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+.row:after, .clearfix:after {
+	clear: both;
+}
+.row, .clearfix {
+	zoom: 1;
+}
+
+/* You can also use a <br class="clear" /> to clear columns */
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.payment_issue.flyer {
+	position: fixed;
+	background: #ffffff;
+	top: -1000px;
+}
+.fly-bitch-fly .payment_issue.flyer {
+	top: 15px;
+	max-width: 320px;
+	-webkit-transition: top 1s;
+	-moz-transition: top 1s;
+	transition: top 1s;
+}
+section.payment_issue .head {
+	padding-top: 15px;
+}
+section.payment_issue h2 {
+	font-size: 40px;
+}
+section.payment_issue .head h2 {
+	margin-bottom: 7px;
+}
+section.payment_issue .head .payment_descript {
+	margin-bottom: 15px;
+}
+
+.more-link {
+	display: none;
+}
+
+/*new*/
+.page-id-489 #wrapper .breadcrumbs {
+	margin-bottom: 90px;
+}
+.page-id-489 #wrapper .contact-w p {
+	font-size: 22px;
+}
+.page-id-489 #wrapper .contact-w .first-line {
+	/*padding-top:90px;*/
+	color: #2f6394;
+	font-weight: 600;
+	font-size: 30px;
+}
+/*.acc-i-title a{display:inline-block; }*/
+.page-id-489 #wrapper .contact-w {
+	text-align: center;
+}
+.page-id-489 #wrapper .contact-w .last-line .blue-text {
+	color: #2f6394;
+}
+.page-id-489 #wrapper .contact-w .last-line {
+	margin-top: 100px;
+	font-size: 18px;
+	line-height: 1.7em;
+	margin-bottom: 390px;
+}
+.page-id-489 #wrapper .contact-w .last-line .red-text {
+	color: #fa0707;
+}
+@media (max-width: 600px) {
+	.page-id-489 #wrapper .contact-w .first-line {
+		font-weight: 400;
+	}
+	.page-id-489 #wrapper .contact-w p {
+		font-size: 22px;
+	}
+	.page-id-489 #wrapper .contact-w .last-line {
+		font-size: 16px;
+		margin-bottom: 275px;
+	}
+}
+.wpcf7-response-output.wpcf7-display-none.wpcf7-validation-errors {
+	background-color: #fff;
+	text-align: center;
+}
+.reg-popup .wpcf7-form {
+	background-color: #f1f2f2;
+	display: block;
+	margin: 0 auto !important;
+	width: 720px;
+	padding: 20px !important;
+	text-align: center;
+}
+
+.wpcf7-not-valid {
+	margin-bottom: 2px !important;
+}
+.wpcf7-not-valid-tip {
+	font-size: 10px !important;
+}
+
+fieldset input {
+	border: 1px solid #cacaca;
+	height: 40px;
+	width: 100%;
+	background-color: #fff;
+	border-radius: 7px;
+	margin-bottom: 25px;
+}
+fieldset textarea {
+	border: 1px solid #cacaca;
+	width: 100%;
+	background-color: #fff;
+	border-radius: 7px;
+	margin: 0 auto;
+	margin-bottom: 25px;
+}
+fieldset select {
+	border: 1px solid #cacaca;
+	width: 100%;
+	height: 40px;
+	background-color: #fff;
+	border-radius: 7px;
+	margin: 0 auto;
+	margin-bottom: 25px;
+}
+fieldset label {
+	float: left;
+	margin-left: 5px;
+	/*margin-bottom: 8px;*/
+}
+fieldset .input-float:nth-child(odd) {
+	float: left;
+	width: 47%;
+}
+fieldset .input-float:nth-child(even) {
+	float: right;
+	width: 47%;
+	/*clear: both;*/
+}
+
+.invalid fieldset .input-float:nth-child(odd) {
+	clear: both;
+}
+.invalid fieldset p {
+	clear: both;
+}
+
+fieldset .input-float-select {
+	float: left;
+	width: 27%;
+	clear: both
+}
+fieldset .input-float-select label {
+	width: 100%;
+	text-align: left;
+}
+fieldset .input-float-select select {
+	float: left;
+	width: 30%;
+}
+fieldset .input-float-textarea {
+	float: right;
+	width: 47%;
+}
+
+fieldset .btn.orange-btn {
+	max-width: 450px;
+	height: 50px;
+}
+
+@media (max-width: 600px) {
+
+
+.reg-popup .wpcf7-form {
+	width: 320px;
+
+}
+
+	fieldset .input-float:nth-child(odd) {
+		float: none;
+		width: auto;
+		clear: none;
+	}
+	fieldset .input-float:nth-child(even) {
+		float: none;
+		width: auto;
+		clear: none;
+	}
+	fieldset .input-float-select {
+		float: none;
+		width: auto;
+	}
+	fieldset .input-float-textarea {
+		float: none;
+		width: auto;
+	}
+	fieldset .input-float-select label {
+		width: auto;
+	}
+	fieldset .input-float-select select {
+		float: none;
+		width: auto;
+		width: 90%;
+	}
+	fieldset {
+		max-width: 320px;
+	}
+	fieldset input {
+		width: 90%;
+	}
+	fieldset textarea {
+		width: 90%;
+	}
+	fieldset select {
+		width: 90%;
+	}
+	fieldset label {
+		margin-left: 15px;
+	}
+
+}
+
+@media (max-width: 768px) {
+	.payment_issue {
+		display: block !important;
+		text-align: center;
+	}
+	.payment_issue .head {
+		/*clear: both;*/
+	}
+	.payment_issue .head .fl-to-l {
+
+		float: left;
+	}
+	.payment_issue .head h2 {
+		margin: 0;
+		padding: 0;
+		text-align: left;
+		font-size: 26px;
+	}
+	.payment_issue .head .payment_descript {
+		/*float:left;*/
+		display: block;
+		font-size: 14px;
+	}
+	.payment_issue .discount {
+		float: right;
+		/*width:47%;*/
+		clear: right;
+		font-size: 14px;
+	}
+	.payment_issue .foot {
+		clear: both;
+	}
+	.payment_services, .payment_logos, .wifi, .foot > span {
+		display: none;
+	}
+	.payment_issue .acc-i {
+		display: none;
+	}
+	.payment_issue h2, .discount i {
+		color: #276fa8;
+	}
+}
+@media (max-width: 640px) {
+	.payment_issue .discount, .payment_issue .head .payment_descript {
+		font-size: 12px;
+	}
+	.payment_issue .head h2 {
+		font-size: 26px;
+	}
+
+	/*.im_lectors .lectors_row .single_speaker {
+		float: none !important;
+		margin: 0 auto;
+		text-align: center;
+		margin-bottom: 15px;
+		min-height: 370px;
+	}*/
+	.im_lectors .lectors_row .single_speaker {
+		
+		margin: 0 auto;
+		text-align: left;
+		margin-bottom: 0px!important;
+		min-height: 490px;
+	}
+	.learn-w ul li {
+		width: 35% !important;
+	}
+	#footer .logo-w .logo-item img {
+		height: auto !important;
+	}
+	.learn-w ul li {
+		margin-top: 0px !important;
+		margin-bottom: 0px !important;
+	}
+}
+@media (max-width: 980px) {
+	.im_lectors .lectors_row .single_speaker {
+		width: 50% !important;
+	}
+}
+
+
+#reg-popup {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+* {
+	font-family: 'Ubuntu', sans-serif !important;
+}
+* i {
+	font-family: FontAwesome !important;
+}
+
+.spam-text{
+ text-align: center;
+  font-size: 12px;	
+}

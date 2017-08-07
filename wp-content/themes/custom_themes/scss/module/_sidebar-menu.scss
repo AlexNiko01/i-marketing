@@ -1,0 +1,44 @@
+.side-bar-menu{
+	border:1px solid $blue;
+	margin-bottom:20px;
+	@include box-shadow(0 0px 3px 0 rgba(0,0,0,0.35));
+	li{
+		display:block;
+		border-bottom:1px solid #eaeff4;
+		background-repeat:no-repeat;
+		background-image:url(../img/menu.png);
+		&:last-child{
+			border-bottom:none;
+		}
+		&.item-1{
+			background-position:0px 5px;
+		}
+		&.item-2{
+			background-position:0px -45px;
+		}
+		&.item-3{
+			background-position:0px -95px;
+		}
+		&.item-4{
+			background-position:0px -150px;
+		}
+		&.item-5{
+			background-position:0px -205px;
+		}
+		&.item-6{
+			background-position:0px -265px;
+		}
+		a{
+			display: block;
+			text-decoration:none;
+			color:$black;
+			font-size:18px;
+			padding:1em 0 1em 75px;
+			&:hover{
+				color:$blue;
+				font-weight:bold;
+			}
+		}
+
+	}
+}

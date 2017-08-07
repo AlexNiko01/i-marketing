@@ -1,0 +1,21 @@
+.learn-w{
+	text-align: center;
+	padding-bottom:20px;
+	ul{
+		li{
+			display:inline-block;
+			vertical-align:middle;
+			margin:20px 0;
+			padding:0 3%;
+			img{
+				margin: auto;
+				display:block;
+			}
+		}
+		@media (min-width:$md-device){
+		li{
+			max-width:19%;
+		}
+		}
+	}
+}

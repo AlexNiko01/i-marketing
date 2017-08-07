@@ -1,0 +1,60 @@
+.ss-page-heading {
+  @include blue-grad();
+  color: $primary-title-color;
+  padding: 22px 0;
+  margin-bottom: 40px;
+  h1 {
+    line-height: 1;
+    margin: 0 0;
+    padding: 0 30px;
+  }
+
+  .breadcrumbs {
+    padding-right:30px;
+    padding-left:30px;
+    ul {
+      margin: 0 0 0;
+      span span {
+        a {
+          color: rgba(180, 200, 234, 0.62);
+          background-color: transparent;
+          padding: 0.5em 0.3em;
+          text-decoration: underline;
+          &:hover {
+            background-color: transparent;
+
+          }
+          &:not(last-child):after{
+            content: '/';
+            display: inline-block;
+            padding-left: 0.6em;
+
+          }
+        }
+
+        .breadcrumb_last {
+          color: $primary-title-color;
+          background-color: transparent;
+          padding: 0.5em 0.3em;
+        }
+      }
+    }
+  }
+
+}
+body{
+  .ss-page-heading{
+    .breadcrumbs ul > span > span > a{
+      &:before{
+        text-decoration: none;
+        display: inline-block;
+      }
+    }
+  }
+
+}
+.ss-article{
+  background-color: $secondary-bc-color;
+  @include shad(0 0px 7px 3px rgba(143, 143, 143, 0.08));
+  padding: 20px 40px;
+}

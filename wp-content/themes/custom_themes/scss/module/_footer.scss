@@ -1,0 +1,90 @@
+#footer{
+	background:$lightGray;
+	overflow:hidden;
+	.fb-like-box,
+	.fb-like-box span,
+	.fb-like-box iframe{
+		width:100%!important;
+	}
+	.footer_iframe{
+		padding:30px 0 0 0;
+		display:none;
+		@media (min-width:$mdplus-device){
+			display: block;
+		}
+	}
+	.logo-w{
+		@include legacy-pie-clearfix ;
+
+		.logo-item{
+			text-align:center;
+			img{
+				height:65px; 
+				width:auto; 
+			}
+			@include span(6);
+		}
+		@media (min-width:$md-device){
+			margin-bottom:20px;
+			.logo-item{
+				@include span(3);
+			}
+		}
+		@media (min-width:$mdplus-device){
+			.logo-item img{
+				height:auto;
+			}
+		}
+	}
+	.footer_partner{
+		padding-bottom:25px;
+	}
+
+	.footer_bottom{
+		padding:10px 0;
+		background:#ededee;
+		border-top:1px solid #d7d7d8;
+		a{
+			color:$black;
+			text-decoration:none;
+			i{
+				color:$orange;
+				margin-right:5px;
+			}
+			&:hover{
+				span{
+					text-decoration:none;
+				}
+			}
+		}
+		.fb-w{
+			span{
+				text-decoration :underline;
+			}
+		}
+		.container div{margin:5px 0;}
+		.copyright-w{@include span(12); font-weight:bold;}
+		.fb-w{@include span(12);}
+		.tel-w{@include span(12);}
+		.mail-w{@include span(12);}
+		@media (min-width:$md-device){
+			.container div{
+				text-align:center;
+				margin:5px 0;
+			}
+			.copyright-w{@include span(6); font-weight:normal;}
+			.fb-w{@include span(6);}
+			.tel-w{@include span(6);}
+			.mail-w{@include span(6);}
+		}
+		@media (min-width:$mdplus-device){
+			.container div{
+				margin:20px 0;
+			}
+			.copyright-w{@include span(4);text-align:left!important;}
+			.fb-w{@include span(2);}
+			.tel-w{@include span(3);}
+			.mail-w{@include span(3);text-align:right!important;}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+.speaker-w{
+	margin:20px 0;
+	@include clearfix();
+	h4{
+		font-size:18px;
+		font-weight:bold;
+	}
+	.thumb{
+		img{
+			margin:0 auto;
+			display:block;
+		}
+	}
+
+
+	@media (min-width:$xsm-device){
+		.thumb{
+			@include span(4 last);
+			margin-left:20px;
+		}
+	}
+	@media (min-width:$mdplus-device){
+		h4{
+			font-size:24px;
+		}
+		.btn{
+			margin-top:40px;
+		}
+		.thumb{
+			margin-left:50px;
+		}
+	}
+}

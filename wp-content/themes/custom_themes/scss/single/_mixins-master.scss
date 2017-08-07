@@ -1,0 +1,77 @@
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}
+@mixin  translateB(){
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+@mixin translateC{
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+@mixin transform($translate){
+	-webkit-transform: $translate;
+	-moz-transform: $translate;
+	-ms-transform: $translate;
+	-o-transform: $translate;
+	transform: $translate;
+}
+@mixin red-arrow(){
+	position: relative;
+	&:after, &:before {
+		position: absolute;
+		display: block;
+		content: '';
+		left: -37px;
+		top: 10px;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 10px 0 10px 20px;
+		border-color: transparent transparent transparent #ff003e;
+	}
+}
+@mixin transition(){
+	-webkit-transition: all .3s ease-in;
+	-moz-transition: all .3s ease-in ;
+	-ms-transition: all .3s ease-in ;
+	-o-transition: all .3s ease-in ;
+	transition: all .3s ease-in ;
+}
+@mixin shad($shadow){
+	-webkit-box-shadow: $shadow;
+	-moz-box-shadow: $shadow;
+	box-shadow: $shadow;
+
+}
+
+@mixin blue-grad() {
+	background: -moz-linear-gradient(235deg, rgba(68,109,177,1) 0%, rgba(54,86,140,1) 100%); /* ff3.6+ */
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(54,86,140,1)), color-stop(100%, rgba(68,109,177,1))); /* safari4+,chrome */
+	background: -webkit-linear-gradient(235deg, rgba(68,109,177,1) 0%, rgba(54,86,140,1) 100%); /* safari5.1+,chrome10+ */
+	background: -o-linear-gradient(235deg, rgba(68,109,177,1) 0%, rgba(54,86,140,1) 100%); /* opera 11.10+ */
+	background: -ms-linear-gradient(235deg, rgba(68,109,177,1) 0%, rgba(54,86,140,1) 100%); /* ie10+ */
+	background: linear-gradient(215deg, rgba(68,109,177,1) 0%, rgba(54,86,140,1) 100%); /* w3c */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#446db1', endColorstr='#36568c',GradientType=0 ); /* ie6-9 */
+}

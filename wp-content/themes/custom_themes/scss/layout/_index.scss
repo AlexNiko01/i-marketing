@@ -1,0 +1,70 @@
+@import "susy";
+
+$susy: (
+	columns: 12,
+	gutters: 1/4,
+	math: fluid,
+	output: float,
+	gutter-position: inside,
+	);
+
+.container {
+	@include container(1050px);
+	padding:0 15px;
+}
+
+#wrapper{
+	position:relative;
+	overflow-x: hidden !important;
+	position: relative;
+	min-width: 320px;
+	/*@include transform(0px, 0px);*/
+	@include transition(transform 0.8s ease);
+	/*z-index: 15;*/
+	background-color: $white;
+}
+
+/*#wrapper.pull {
+	@include box-shadow(1px 0 3px 0 rgba(0,0,0,0.3));
+	@include transition(transform 0.8s ease);
+	@include transform (translate(0, 220px));
+}*/
+.content{
+	.sidebar,	
+	.main-content{
+		@include span(12);
+
+	}
+
+	@media (min-width:$mdplus-device){
+
+	padding-bottom:50px;
+		.main-content{
+			@include span(8);
+		}
+
+		.sidebar{
+			@include span(4);
+		}
+	}
+}
+
+.main-content{
+	h2{
+		text-align:left;
+		font-size:24px;
+	}
+	@media (min-width:$mdplus-device){
+		h2{
+			font-size:42px;
+			font-weight: normal;
+		}
+	}
+}
+
+.contact-w{
+			i{
+			color:$blue;
+			margin-right:5px;
+		}
+}

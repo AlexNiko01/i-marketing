@@ -1,0 +1,29 @@
+.ss-intro {
+  height: 610px;
+}
+.ss-about__item {
+    padding: 40px;
+}
+.ss-program__title {
+    padding: 15px 0 10px;
+}
+
+.ss-program__single {
+    margin-top: 0px;
+}
+
+textarea {height: 80px;}
+
+.ss-subtitle {
+    font-size: 18px;
+}
+
+.ss-about__item--last .btn, .btn.orange-btn {
+    box-shadow: 0 0 20px #313131;
+}
+
+.title-promo {
+    border-bottom: 1px dashed #000;
+    padding: 12px 0 2px 0;
+    text-decoration: none;
+}

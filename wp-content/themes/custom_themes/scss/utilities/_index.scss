@@ -1,0 +1,28 @@
+/*********
+ utilities styles 
+ ********/
+ @import "*";
+
+ .txt-left{text-align:left}
+ .txt-right{text-align:right}
+ .txt-center{text-align:center}
+
+ .to-uppercase{text-transform:uppercase;}
+
+ .mobile-only{display: block;}
+ .desktop-only{display: none;}
+
+
+ .fl_to_r{float:right!important;}
+ .fl_to_l{float:left!important;}
+
+
+
+ @media (min-width: $md-device) {
+ 	.mobile-only{
+ 		display: none;
+ 	}
+ 	.desktop-only{
+ 		display: block;
+ 	}
+ }

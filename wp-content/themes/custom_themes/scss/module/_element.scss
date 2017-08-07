@@ -1,0 +1,128 @@
+$iconPath: $imgPath + "icon/";
+
+@mixin simular-for-ui(){
+	@include border-radius(4px);
+	padding:0 20px;
+	border:none;
+	font-family:$mainFont;
+	margin:2px 0 $marg*3;
+}
+
+
+@mixin simular-for-inputs(){
+	$inner-shadow:0 1px 2px 0 rgba(0,0,0,0.35) inset;
+	width:100%;
+	display: block;
+	font-style: 13px;
+	color:#767676;
+	@include box-shadow($inner-shadow,0 0 0 1px $blue);
+	&:focus{
+		@include box-shadow($inner-shadow,0 0 0 2px $blue);
+	}
+	&.error{
+		@include box-shadow($inner-shadow,0 0 0 2px $red);
+	}
+	&.success{
+		@include box-shadow($inner-shadow,0 0 0 2px $green);
+	}
+	&[class^="icon-"]{
+		padding-left:35px;
+		background-position: 10px center;
+		background-repeat:no-repeat;
+		background-color:#fff;
+	}
+	&.icon-mail{
+		background-image: url(../img/icon/mail.png);
+	}
+	&.icon-user{
+		background-image: url(../img/icon/user.png);
+	}
+	&.icon-message{
+		background-image: url(../img/icon/message.png);
+	}
+}
+
+
+.input,
+input[type=text],
+input[type=password],
+input[type=tel],
+input[type=email]{
+	@include simular-for-ui();
+	@include simular-for-inputs();
+	line-height: 42px;
+	height:42px;
+	@media (min-width:$mdplus-device){
+		line-height: 55px;
+		height:55px;
+	}
+}
+textarea{
+	@include simular-for-ui();
+	@include simular-for-inputs();
+	resize: vertical;
+	height:200px;
+	padding:10px;
+	&[class^="icon-"]{
+		background-position: 10px 10px;
+	}
+
+}
+
+.btn,
+input[type=submit],
+button
+{
+	@include simular-for-ui();
+	@include transition(all 0.25s);
+	// line-height: 53px;
+	// height:55px;
+	font-size:14px;
+	display:inline-block;
+	padding:0.75em 3em;
+	border:1px solid $blue;
+	text-decoration:none;
+	background:rgba(0,0,0,0);
+	color:$black;
+	@media (min-width:$mdplus-device){
+		font-size: 16px;
+		padding:1em 3em;
+
+	}
+	font-weight: bold;
+	font-family: $mainFont;
+	&:hover{
+		background:$blue;
+		color:$white;
+		cursor: pointer;
+		@include box-shadow(1px 1px 4px 0 rgba(0,0,0,0.35));
+	}
+	&.btn__m{
+		padding: 0.75em 2em;
+
+	}
+	&.btn__s{
+		// height:35px;
+		// line-height:33px;
+		font-size: 12px;
+		padding: 0.5em 2em;
+	}
+	&.orange-border-btn{
+		border:1px solid #e4951f;
+		&:hover{
+			border:1px solid #e4951f;
+			background:$white;
+			color:$black;
+		}
+	}
+	&.orange-btn{
+		background-color: $orange;
+		border:1px solid $orange;
+		color:$white;
+		&:hover{
+			background:#e4951f;
+			border:1px solid #ca851b;
+			color:$white;
+		}
+	}
+}

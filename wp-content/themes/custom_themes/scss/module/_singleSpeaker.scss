@@ -1,0 +1,27 @@
+.single_speaker{
+    text-align: left;
+    img{
+        text-align: center;
+    }
+    span{
+        display: block;
+        
+    }
+    .single_speaker_header{
+        margin-top: 18px;
+        margin-bottom: 18px;
+        font-size:20px;
+        @media (min-width:$mdplus-device){
+            font-size:24px;
+            margin-top: 65px;
+            margin-bottom:15px;
+        }
+    }
+    .single_speaker_post{
+        font-weight:bold;
+    }
+    .single_speaker_post, .single_speaker_description{
+        font-size:12px;
+    }
+
+}

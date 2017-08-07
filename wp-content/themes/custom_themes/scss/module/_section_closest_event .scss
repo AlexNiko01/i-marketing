@@ -1,0 +1,10 @@
+@media (max-width:$mdplus-device){
+    .events_shedule_wrap{
+        display:none;
+    } 
+}
+@media (min-width:$mdplus-device){
+    .events_shedule_wrap{
+        display:block;
+    } 
+}

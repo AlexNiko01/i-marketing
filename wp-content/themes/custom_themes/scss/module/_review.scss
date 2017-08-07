@@ -1,0 +1,70 @@
+
+h1{
+    font-size: 24px;
+    @media(min-width:$mdplus-device){
+        font-size: 48px;
+    }
+}
+
+.im_review{
+
+    @media(min-width:$mdplus-device){
+        margin-left: -10px;  
+    }
+}
+
+.review_row{
+    overflow:hidden;
+    a{
+        text-align: center;
+        display: inline-block;
+        text-decoration: none;
+        margin-bottom:15px;
+        max-height: 122px;
+        @include span(6);
+        img{
+            border: 1px solid #dadada;
+        }
+    }
+    @media (min-width:$smplus-device){
+        a{
+            margin-bottom:10px;
+            max-height: 100%;
+            @include span(3);
+            img{
+            }
+        }
+    }
+}
+
+/*popup*/
+.white-popup{
+    outline: none;
+    position: relative;
+    width:50%;
+    margin: 0 auto;
+    padding: 10px 15px;
+    background-color: $white;
+    span{
+        display: block;
+    }
+    .popup_header{
+        font-weight: 700;
+        font-size: 24px;
+    }
+    .popup_feedback,.popup_description{
+        font-size: 14px;
+    }
+    .popup_feedback{
+        margin-top: 5px;
+        font-style: italic;
+        margin-bottom: 37px;
+
+    }
+    @media (min-width:$smplus-device){
+        padding: 100px 75px;
+    }
+}
+.mfp-close{
+    position: absolute;
+}

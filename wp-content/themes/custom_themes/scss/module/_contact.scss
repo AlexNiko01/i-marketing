@@ -1,0 +1,50 @@
+.contact-item{
+	overflow:hidden;
+	margin-bottom:20px;
+	a{
+		color:$blue;
+	}
+	.foto{
+		max-width:80px;
+		margin-right:20px;
+		float:left;
+	}
+	h3{
+		font-size:15px;
+		margin:0 0 7px 0;
+	}
+	span{
+		display:block; 
+		font-size:12px;
+		margin-bottom:5px;
+
+	}
+
+	@media(min-width:$mdplus-device){
+		.foto{
+			margin-right:40px;
+			max-width:100px;
+		}
+		h3{
+			font-size: 24px;
+			font-weight: bold;
+		}
+		span{
+			font-size: 14px;
+			margin-bottom:7px;
+		}
+	}
+}
+
+.adress-office{
+	margin-top:50px;
+	h3{
+		font-size:24px;
+		font-weight: bold;
+		margin:15px 0;
+	}
+}
+
+.map-wrap{
+	margin-top:30px;
+}

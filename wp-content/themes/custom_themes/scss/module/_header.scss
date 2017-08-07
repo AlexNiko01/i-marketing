@@ -1,0 +1,146 @@
+/******header styles*********/
+#header{
+
+    .menu_button{
+        float:left;
+        color: rgba(24,49,93,0.8);
+        position:absolute;
+        top:50%;
+        margin-top:-12px;
+        left:20px;
+        z-index:9999;
+        padding:0 $pad;
+/*        height:15px;
+        width:15px;*/
+        i{
+/*            font-size: 14px;*/
+        }
+    }
+
+
+    min-height:65px;
+    position:relative;
+    z-index:9999;
+    background-color: $white;
+    overflow:hidden; 
+    .call_us{
+        float:right;
+    }
+    .main_logo{
+        margin-left: 52px;
+        @include transition(all 0.25s);
+        float:left;
+        display:block;
+        background-image:url(../img/images/desctop_logo.png);
+        background-repeat:no-repeat;
+        background-position:left bottom;
+        height:48px;
+        width:377px;
+        background-size:100% 80%;
+        width: 150px;
+        @media (max-width: $md-device){
+         width:200px!important;   
+        }
+    }
+    .main_menu{
+        ul{
+            float:right;
+            margin:0;
+            padding:0;
+            li{
+                list-style-type:none;
+                margin:0;
+                padding:0;
+                display:inline-block;
+                a{
+                    text-decoration:none;
+                    color: $black;
+                }
+            }
+        }
+    }
+    @media (min-width: $md-device){
+
+        .main_logo{
+            margin-left: 0px;
+            margin-top:50px;
+        }
+        .call_us{
+            @include transition(all 0.25s);
+            font-size:16px;
+            padding-top: $pad*3;
+            padding-bottom: $pad*3;
+            a{
+                color: $black;
+                font-weight:700;
+                text-decoration:none;
+                i{
+                    background-color: $orange;
+                    height:18px;
+                    width:18px;
+                    border-radius:3px;
+                    text-align:center;
+                    color: $white;
+                }
+            }
+        }
+        .main_menu{
+
+            ul{
+                border-top:1px solid $orange;
+                li{
+                    @include transition(all 0.25s);
+                    padding: $pad*4;
+                    a{
+                        font-weight:400;
+                        padding: $pad*2;
+                        &:hover{
+                            text-decoration:none;
+                            text-shadow:0 0 1px black, 0 0 1px black, 0 0 1px black
+                        }
+
+                    }
+
+                    &:first-child{
+                        padding-left:0;
+                    }
+                    &:last-child{
+                        padding-right:0;
+                    }
+                }
+            }
+
+            .active{
+                a{
+                    background-color: $lightBlue;
+                    border-radius:15px;
+                    font-weight:700;
+                }
+            }
+
+        }
+        @media (max-width:  $mdplus-device){
+            .main_logo{
+                margin-top:50px;
+                @include transition(all 0.25s);
+
+            }
+            .main_menu{
+                ul{
+                    li{
+                        padding:$pad*4;
+                        padding-left:0;
+                        padding-right:0;
+                    }
+                }
+            }
+        }
+        @media (min-width:  $lg-device){
+            .main_logo{
+                height:48px;
+                width:377px;
+            }
+        }
+
+    }
+}

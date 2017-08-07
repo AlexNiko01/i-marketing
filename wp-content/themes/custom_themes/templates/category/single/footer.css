@@ -1,0 +1,158 @@
+.footer_issue, .footer_issue2 {
+ display : none;
+
+}
+@media (max-width: 768px) {
+  .footer_issue2 {
+    display : block;
+    width : 100%;
+    margin-left : 0.8%;
+    margin-right : 0.8%;
+    text-align : center;
+    padding-bottom : 50px;
+  }
+  .sidebar {display : none;}
+
+  .footer_issue2 h2 {
+    text-align: center;
+    margin: 0;
+    font-size : 28px;
+    color : #276fa8;
+
+  }
+  .footer_issue2 span {
+    display: block;
+    margin-bottom : 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer_issue {
+    display : block;
+    background : #f5f5f5;
+    width : 100%;
+    border : 1px solid #f39b11;
+    float : left;
+    margin-left : 0.8%;
+    margin-right : 0.8%;
+  }
+
+  .footer_issue .seminar_footer_bg {
+ width : 66%;
+ float : left;
+}
+
+.footer_issue .seminar_footer_column{
+ width : 50%;
+ float : left;
+ padding : 32px 28px 32px 28px;
+
+}
+
+.footer_issue .seminar_footer_column_last {
+ width : 34%;
+ background : #fff;
+ padding : 32px 28px 0 28px;
+ float : right;
+}
+   .footer_issue .payment_logos img, .footer_issue .wifi img  {vertical-align : middle;}
+
+
+
+  .footer_issue span b {
+    font-weight: bold;
+  }
+
+  .footer_issue .head {
+   padding-left : 20px;
+   padding-right : 20px;
+  }
+
+
+  .footer_issue .head h2 {
+    text-align: left;
+    margin: 0;
+    font-size : 52px;
+    color : #276fa8;
+
+  }
+  .footer_issue .head span {
+    display: block;
+  }
+  .footer_issue .head .payment_descript {
+    padding-top : 8px;
+    padding-bottom: 15px;
+    font-size: 20px;
+  }
+  .footer_issue .head .discount i {
+    color: #276fa8;
+  }
+  .footer_issue .foot .btn_seminar {
+    padding: 20px 12px;
+    margin-bottom: 0;
+  }
+  .footer_issue .foot {
+    overflow: hidden;
+    padding-left: 0;
+    padding-bottom: 30px;
+    padding-right: 0;
+    padding-top: 19px;
+  }
+  .footer_issue .foot span, .footer_issue .foot .see_letter, .footer_issue .foot .place {
+    display: block;
+  }
+  .footer_issue .foot .payment_services span {
+    font-size: 12px;
+    display: inline-block;
+  }
+  .footer_issue .foot .payment_services .payment_logos {
+    line-height: 3em;
+    display: table-cell;
+  }
+  .footer_issue .foot .payment_services .payment_logos img {
+    vertical-align: middle;
+  }
+  .footer_issue .descript_payment {
+    padding-top : 12px;
+    padding-bottom : 12px;
+
+  }
+  .footer_issue .foot .descript_payment span{
+
+  }
+
+  .footer_issue .foot .descript_payment b {
+    font-weight: bold;
+  }
+  .footer_issue .foot .wifi {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 3em;
+    display: table-cell;
+  }
+  .footer_issue .wifi img {
+    vertical-align: middle;
+    margin-left: 20px;
+  }
+  .footer_issue .foot .see_letter, .footer_issue .foot .place {
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px dashed #000;
+        font-size: 16px;
+     }
+  .footer_issue .foot .see_letter:hover, .footer_issue .foot .place:hover {
+    border-bottom: 1px dashed #fff;
+  }
+  .footer_issue .foot .see_letter {
+    margin-bottom: 20px;
+  }
+  .footer_issue .foot input, .footer_issue .foot .payment_services {
+    margin-bottom: 19px;
+  }
+  .payment_services{margin-bottom: 8px!important;}
+  .footer_issue h2 {
+    color: #276fa8;
+    font-size: 45px;
+  }
+}

@@ -1,0 +1,78 @@
+.seminar-detail{
+	h4{
+		color:#525151;
+		font-family: $secondFont;
+		font-size:20px;
+		margin:0;
+	}
+	h2{
+		margin-top:0;
+		font-family: $secondFont;
+		font-weight:normal;
+		padding-bottom:15px;
+		border-bottom:1px solid #acc1d4;
+		font-size:24px;
+		text-align:left;
+		a{
+			color:#000;
+			text-decoration:none;
+		}
+	}
+	h4+h2{
+		margin-top:0;
+	}
+	img{
+		margin:10px 0;
+	}
+	h3{
+		font-family: $secondFont;
+		font-size: 18px;
+		font-weight:bold;
+		margin-top:1.5em;
+		color:$blue;
+	}
+	ul{
+		li{
+			padding-left:20px; 
+			position:relative;
+			display:block;
+			margin-bottom:10px;
+			&:before{
+				content:'\f00c';
+				font-family: $fontAwesome;
+				position:absolute;
+				left:0;
+				top:0;
+				color:$blue;
+			}
+		}
+	}
+	@media (min-width:$mdplus-device){
+		margin-bottom:45px;
+		h2{
+			font-size:44px;
+			border:none;
+			padding:0;
+		}
+		h3{
+			font-size: 24px;
+		}
+		h4{
+			font-size:35px;
+		}
+		ul{
+			li{
+				padding-left:37px;
+				margin-bottom:15px;
+			}
+			li:before{
+				font-size: 2em;
+				top:7px;
+
+			}
+		}
+		
+	}
+
+
+}

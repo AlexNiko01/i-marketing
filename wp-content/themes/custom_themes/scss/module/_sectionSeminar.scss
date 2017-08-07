@@ -1,0 +1,152 @@
+.single_event{
+    text-align: left;
+    overflow:hidden;
+    position:relative;
+    @include span(12);
+    margin-bottom:15px;
+    .event_overlay{
+        display:none;
+        @include transition(all 0.25s);
+    }
+    .single_event_content{
+        padding: $pad*5 $pad*3;
+        background-color: $white;
+        border:1px solid $orange;
+        border-bottom:none;
+        span{
+            display:block;
+        }
+        .event_over_header{
+            font-weight:700;
+            font-size:14px;
+            color: #010000;
+            margin-bottom:11px;
+        }
+        .single_event_header{
+            font-weight: 400;
+            color: #1b5b8d;
+            font-size:16px;
+            margin-bottom:8px;
+        }
+        .event_description{
+            display:none;
+        }
+        @media (min-width:$mdplus-device){
+            padding: $pad*6 $pad*8;
+            .event_over_header{
+                margin-bottom:17px;
+            }
+            .single_event_header{
+                font-weight: 700;
+                line-height: 1.35em;
+                font-size:24px;
+                margin-bottom:17px;
+            }
+            .event_description{
+                display:block;
+            }
+        }
+    }
+    .single_event_footer{
+        background-color: $orange;
+        font-size:12px;
+        font-weight: 700;
+        color: $white;
+        padding-top:18px;
+        padding-bottom:18px;
+        padding-left:$pad*3;
+        .schedule{
+            margin-left:17px
+        }
+        .view_seminar_program{
+            text-decoration: none;
+            color: $white;
+            font-size: 12px;
+            font-weight:bold;
+            background-color: $blue;
+            padding: $pad $pad*2;
+        }
+        @media (min-width:$mdplus-device){
+            text-align:center;
+            font-size: 18px;
+            font-weight:400;
+            padding-top:12px;
+            padding-bottom:18px;
+            padding-left:40px;
+            .schedule{
+                margin-left:27px
+            }
+        }
+    }
+    @media (min-width:$mdplus-device){
+        @include span(6);
+    }
+    &:hover {
+        cursor:pointer;
+        .event_overlay{
+            text-align:center;
+            position:absolute;
+            top:0;
+            /*left:0.83333%;*/
+            width:98.334%;
+            height:100%;
+            opacity:1;
+            display:block;
+            z-index:9999;
+            background-color: rgba(243,155,17,0.95);
+            @include transition(all 0.25s);
+
+            a{
+                position:relative;
+                top:50%;
+                margin-top:-30px;
+
+                text-align:center;
+                text-decoration:none;
+                padding-top:20px;
+                padding-bottom:20px;
+                padding-left:60px;
+                padding-right:60px;
+                text-align:center;
+                background-color: $white;
+                font-size:16px;
+                font-weight: 700;
+                color: #010000;
+            }
+            @media (min-width:$mdplus-device){
+                width:96.334%; 
+            }
+        }
+    }
+}
+
+.single_event.seminar_item{
+    @include span(12);
+    cursor: auto;
+    .single_event_footer{
+        text-align:center;
+        .view_seminar_program{
+            border-radius: 4px;
+            display:block;
+            max-width: 219px;
+            text-align: center;
+            margin: 0 auto;
+            margin-top:20px;
+        }
+        @media (min-width:$lg-device){
+            .date{
+                display: inline-block;
+                margin-top:5px;
+            }
+            text-align:left;
+            .view_seminar_program{
+                display:inline;
+                float: right;
+                margin-top: -4px;
+                margin-right: 12px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            } 
+        }
+    }
+}

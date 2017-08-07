@@ -1,0 +1,44 @@
+section.events{
+    background-color:$lightGray;
+    overflow:hidden;
+    width:100%;
+    text-align: center;
+    .events_header{
+        position: relative;
+        display:block;
+        text-align:center;
+        font-size:22px;
+        font-weight:bold;
+        margin:25px 0;
+        padding:15px 0;
+        &::before{
+            content: " ";
+            background-image: url("../img/images/events.png");
+            background-repeat: no-repeat;
+            background-position: center center;
+            width:53px;
+            height:53px;
+            position:absolute;
+            margin-left:-40px;
+            margin-top: -13px;
+            background-size: 20px 20px;
+        }
+        @media (min-width:$mdplus-device){
+            &::before{
+                margin-left:-60px;
+                margin-top: -2px; 
+                background-size: auto auto;
+            }
+            font-size:36px;
+        }
+
+    }
+    .btn{
+        margin:15px 0;
+        @media (min-width:$mdplus-device){
+            margin:40px 0;
+        }
+    }
+
+
+}

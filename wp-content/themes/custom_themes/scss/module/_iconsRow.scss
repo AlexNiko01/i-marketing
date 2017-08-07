@@ -1,0 +1,38 @@
+section.icons_row{
+    background-color: $white;
+    overflow: hidden;
+    width:100%;
+    .icon{
+        margin-top:35px;
+        margin-bottom:35px;
+        img{
+            float:left;
+            height:auto;
+            width: 43px;
+        }
+        span{
+            font-size:11px;
+            display:block;
+            /*line-height:25px;*/
+            margin-top:3px;
+            font-weight:700;
+            text-align: left;
+            margin-left:50px;
+            width:100%;
+        }
+        @include span(6);
+        text-align:center;
+        @media (min-width:$mdplus-device){
+            img{
+                height: auto;
+                width:53px;
+            }
+            span{
+                font-size: 16px;
+                margin-top:6px;
+                margin-left:60px;
+            }
+            @include span(3);
+        }
+    }
+}
