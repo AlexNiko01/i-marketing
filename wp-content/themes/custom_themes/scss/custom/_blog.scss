@@ -10,13 +10,13 @@
   }
 
   .breadcrumbs {
-    padding-right:30px;
-    padding-left:30px;
+    padding-right: 30px;
+    padding-left: 30px;
     ul {
       margin: 0 0 0;
       span span {
         a {
-          color: rgba(180, 200, 234, 0.62);
+          color: #a7dcfd;
           background-color: transparent;
           padding: 0.5em 0.3em;
           text-decoration: underline;
@@ -24,7 +24,7 @@
             background-color: transparent;
 
           }
-          &:not(last-child):after{
+          &:not(last-child):after {
             content: '/';
             display: inline-block;
             padding-left: 0.6em;
@@ -42,19 +42,85 @@
   }
 
 }
-body{
-  .ss-page-heading{
-    .breadcrumbs ul > span > span > a{
-      &:before{
+
+body {
+  .events_shedule_wrap{
+    border: none;
+    color: #fff;
+  }
+
+  .ss-page-heading {
+    .breadcrumbs ul > span > span > a {
+      &:before {
         text-decoration: none;
         display: inline-block;
       }
     }
   }
+  .side-bar-menu{
+    border: none;
+    background-color: #fff;
+    ul{
+      padding: 30px 0;
+    }
+    li{
+      border-bottom:none;
+      background-image: none;
+      a{
+        padding:1em 0 1em 42px;
+        border-left:4px solid #fff;
+        &:hover{
 
+          background-color: #f5f8fb;
+          border-left:4px solid $btn-color;
+          font-weight:normal;
+          color: inherit;
+        }
+      }
+    }
+  }
 }
-.ss-article{
+
+.ss-article {
   background-color: $secondary-bc-color;
   @include shad(0 0px 7px 3px rgba(143, 143, 143, 0.08));
   padding: 20px 40px;
+  &__btn{
+    float: right;
+    background-color: $btn-color;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 22px;
+    border-radius: 29px;
+  }
+  &__info{
+    float: left;
+  }
+  &__cats{
+    text-transform: lowercase;
+    color: #456eb2;
+    margin-bottom: 34px;
+    display: inline-block;
+    font-weight:bold;
+  }
+  &__cat{
+    display: inline-block;
+    &:not(:last-child){
+      padding-right: 30px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .ss-article {
+    &.article.article__short h2 {
+      font-size: 36px;
+      margin: 0 0 0;
+      border-bottom: none;
+      padding-bottom: 34px;
+      line-height: 1;
+
+    }
+  }
+
 }

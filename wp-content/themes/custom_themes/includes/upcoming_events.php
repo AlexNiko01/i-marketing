@@ -1,7 +1,7 @@
 <?php query_posts($query_string . 'cat=4&showposts=4'); ?>
 
-<section class="closest_event">
-    <div class="events_shedule_wrap">
+<aside class="ss-event-side ss-blue-grad-bc">
+    <div class="ss-event-side__shedule_wrap">
         <h3>Ближайшие события</h3>
 
         <?php while (have_posts()) : the_post(); ?>
@@ -15,5 +15,5 @@
         <?php endwhile; ?>
 
     </div>
-</section>
+</aside>
  
