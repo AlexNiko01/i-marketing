@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('custom'); ?>
 <?php
 if (is_page(13)) {
     get_template_part('templates/home');
@@ -24,6 +24,11 @@ if (is_page(13)) {
             </div>
             <?php get_template_part('sidebar/standart-page'); ?>
         </div>
+        <?php if (is_page(5)): ?>
+            <?php get_template_part('custom/blog/upcoming-events') ?>
+
+            <?php get_template_part('custom/seminar/organizators') ?>
+        <?php endif; ?>
     </div>
 <?php } ?>
 <?php get_footer(); ?>

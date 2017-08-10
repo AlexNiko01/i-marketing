@@ -1,11 +1,12 @@
 <?php
 $who_organize = get_field('who_organizators');
-$sub_title = get_field('about_organizators');
-if (!empty($who_organize)) : ?>
+$sub_title = get_field('about_organizators');?>
+<div style="display: none">organizators</div>
+<?php if (!empty($who_organize)) : ?>
 
     <section class="ss-organizators">
         <div class="ss-container ss-container--small">
-            <h2 class="ss-title"><?php echo __('Кто орагнизовывает семинар', 'custom_theme') ?></h2>
+            <h2 class="ss-title"><?php echo __('Кто организовывает семинар', 'custom_theme') ?></h2>
             <h3 class="ss-subtitle"><?php echo $sub_title ?></h3>
 
             <div class="ss-organizators__list">

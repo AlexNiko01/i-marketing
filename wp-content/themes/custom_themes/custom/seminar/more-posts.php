@@ -16,7 +16,7 @@
                         )
                     );
                     ?>
-                    <?php echo __('Ближайший семинары', 'custom_themes') ?>
+                    <?php echo __('Ближайшие семинары', 'custom_themes') ?>
                     <a href="<?php echo $link ?>">(<?php echo __('Смотреть все', 'custom_themes') ?>)</a>
 
                 </h3>

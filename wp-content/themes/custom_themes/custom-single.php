@@ -59,16 +59,11 @@ $date = new DateTime($date);
                 <?php the_field('type_of_event') ?>
             </h2>
             <span class="ss-intro__text">
-                <?php
-                setlocale(LC_ALL, array('ru_RU.utf-8', 'rus_RUS.utf-8'));
-                $date = get_field('event_data', false, false);
-                $date = new DateTime($date);
-                ?>
-                <?php $formatted_time = strftime(" %e %B", $date->getTimestamp());
-                echo $formatted_time;
-                echo ', ' ?>
+			<?php the_field('date_of_the_event');
+                echo ', '; ?>
                 <?php the_field('city') ?>
             </span>
+			 
             <h1 class="ss-intro__title"><?php the_title(); ?></h1>
 
 

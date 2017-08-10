@@ -1,3 +1,33 @@
+@media (min-width: 768px) {
+  blockquote {
+    padding: 50px 69px;
+    font-size: 20px;
+  }
+  .btn, input[type=submit], button {
+    padding: 1em 1em;
+  }
+  .ss-article {
+    &.article.article__short h2 {
+      font-size: 36px;
+      margin: 0 0 0;
+      border-bottom: none;
+      padding-bottom: 34px;
+      line-height: 1;
+
+    }
+  }
+  .content {
+    padding-bottom: 0;
+    .main-content {
+      width: 74.66667%;
+      padding-left: 0;
+    }
+    .sidebar {
+      width: 25.33333%;
+      padding-right: 0;
+    }
+  }
+}
 @media all and(max-width: 1200px) {
   #header {
     .custom-header {
@@ -18,10 +48,110 @@
   }
 }
 
+
+
+@media  all and(max-width: 991px) {
+  .content {
+    position: relative;
+    .main-content {
+      width: 100%;
+      float: none;
+      padding-right: 0;
+      padding-left: 0;
+      margin-top: 408px;
+    }
+    .sidebar {
+      width: 100%;
+      float: none;
+      padding-right: 0;
+      position: absolute;
+      top: 101px;
+      left: 0;
+      .closest_event {
+        display: none;
+      }
+    }
+  }
+}
+
 @media all and(max-width: 991px) {
+  .ss-up-com__title {
+    font-size: 24px;
+  }
+  .ss-up-com__see {
+    font-size: 14px;
+    margin-top:0;
+    margin-bottom:0;
+  }
+  .ss-page-heading {
+    h1 {
+      font-size: 30px;
+      padding: 0 0;
+    }
+    .breadcrumbs {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+  .ss-pagination-wrap {
+    padding: 30px 15px 10px;
+    margin-right: -15px;
+    margin-left:-15px;
+    & > a {
+      padding: 11px 0;
+    }
+  }
+  .ss-article {
+    padding: 40px 15px;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  .ss-up-com-seminar__term {
+    padding: 0 7px 0 15px;
+  }
+  .ss-up-com-seminar__content {
+    height: auto;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  .ss-up-com-seminar__item {
+    margin-top: -15px;
+  }
+  .ss-uc-speakers__wrap {
+    display: block;
+    padding: 30px 6px 10px;
+  }
+  .page-numbers li span, .page-numbers li a {
+    display: none;
+    padding: 12px 15px;
+  }
+  .page-numbers li span.current, .page-numbers li a.current,
+  .page-numbers li a.prev, .page-numbers li a.next {
+    display: inline-block;
+  }
+  .page-numbers li a.prev, .page-numbers li a.next {
+    padding: 0 15px;
+  }
+  .ss-uc-speakers__item:not(:first-child) {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .ss-uc-speakers__wrap,
+  .ss-up-com-seminar__title {
+    padding: 0 15px;
+  }
+  .ss-uc-speakers__title {
+    padding: 20px 15px 10px;
+  }
   .ss-speakers__list-ns .ss-speakers__single {
     width: 100%;
     float: none;
+  }
+  .ss-up-com {
+    padding: 50px 0 0;
+    margin-bottom: -15px;
+
   }
   .custom-header {
     position: relative;
@@ -151,6 +281,9 @@
 }
 
 @media all and(max-width: 768px) {
+  .sidebar {
+    display: block;
+  }
   .ss-intro {
     height: 500px;
     &__content {
@@ -263,7 +396,6 @@
   .main_menu_mob.custom-template-menu.openType {
     top: 84px;
   }
-
 
   .ss-footer {
     &__call_us {

@@ -89,7 +89,7 @@
                         <?php the_field('in_pay'); ?>
                     <?php } ?>
                     <?php if(get_field('wifi') == true){
-                        echo __('бесплатный wi-fi', 'custom_thrmes');?>
+                        echo __('Бесплатный Wi-Fi', 'custom_thrmes');?>
                         <img class="ss-wifi" src="<?php bloginfo("template_url"); ?>/img/images/wifi.png" alt=""/>
                     <?php  } ?>
                 </div>
@@ -99,6 +99,7 @@
                 <p>
                     <small><strong><?php the_field('location') ?></strong></small>
                 </p>
+				<p><?php if(get_field('maps') != '') { ?><a href="<?php the_field('maps') ?>" target="_blank" style="color: #000000"><?php the_field('phrase-57') ?></a><?php } ?></p>
                 <?php the_field('seminat_rozklad') ?>
             </div>
         </div>
